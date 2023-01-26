@@ -14,7 +14,7 @@
 
 <!-- Set the page title -->
 {% block pageTitle %}
-Business Services Authority 
+  Contact the NHSBSA
 {% endblock %}
 
 <!-- Edit the header -->
@@ -22,11 +22,22 @@ Business Services Authority
 {% block header %}
   {{ header({
     "service": {
-        "name": "Business Services Authority",
+        "name": "Business Services Authority ",
         "href": "/"
       },
-      "showNav": "false",
-      "showSearch": "false"
+    
+      "showNav": "true",
+      "showSearch": "false",
+      "primaryLinks": [
+      {
+        "url"  : "#",
+        "label" : "Knowledge base"
+      },
+      {
+        "url"  : "#",
+        "label" : "Sign-in"
+      }
+    ]
     })
   }}
 {% endblock %}
